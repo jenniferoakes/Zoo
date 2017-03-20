@@ -18,12 +18,12 @@
   console.log(jordan.toString() );
 
 
-  // let chuck = new Elephants ('Chuck');
+  // let chuck = new Elephant ('Chuck');
   // console.log(chuck);
   //
-  // let ginger = new Flamingoes ('Ginger');
+  // let ginger = new Flamingo ('Ginger');
   // console.log(Ginger);
   //
-  // let summer = new KoalaBears ('Summer');
+  // let summer = new KoalaBear ('Summer');
   // console.log(summer);
 }());
