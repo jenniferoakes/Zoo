@@ -5,15 +5,19 @@
 
   let Animal = window.zoo.Animal;
 
-  let window.zoo.Flamingo = class Flamingo extends Animal {
+  window.zoo.Flamingo = class Flamingo extends Animal {
     constructor(name, dateOfBirth) {
-      super(name, dateofBirth);
+      super(name, dateOfBirth);
     }
-
     print() {
       super.print();
       console.log('creating an flamingo?');
     }
+
+    static getSpecies () {
+    return 'Flamingo';
+  }
+
   };
 
 

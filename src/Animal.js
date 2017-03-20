@@ -7,9 +7,13 @@
     constructor(name, dateOfBirth) {
       this.name = name;
       if ( ! (dateOfBirth instanceof Date) ) {
-          dateOfBirth = new Date();
-    }
+        dateOfBirth = new Date();
+      }
       this.dob = dateOfBirth;
+    }
+
+    getDob() {
+      return this.dob;
     }
 
     getAge() {
@@ -19,12 +23,12 @@
     }
 
     printName() {
-        console.log(this.name);
-        return 'this.name';
+      console.log(this.name);
+      return 'this.name';
     }
 
     toString() {
-        return this.name + ' ' + this.dob;
+      return this.name + ' ' + this.dob;
     }
 
 

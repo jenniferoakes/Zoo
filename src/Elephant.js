@@ -7,12 +7,17 @@
 
   window.zoo.Elephant = class Elephant extends Animal {
     constructor(name, dateOfBirth) {
-      super(name, dateofBirth);
+      super(name, dateOfBirth);
     }
     print() {
       super.print();
-      console.log('creating an elephant?');
+      console.log('Creating an elephant?');
     }
+
+    static getSpecies() {
+    return 'Elephant';
+  }
+
   };
 
 
