@@ -32,6 +32,7 @@
   console.log( chuck.giveBirth('Chuckster'));
   console.log( chuck.giveBirth('Chuckette'));
   console.log( chuck.children );
+  console.log( chuck.beCute(2));
 
 
 
@@ -46,6 +47,7 @@
   console.log( ginger.layEggs('Basil'));
   console.log( ginger.layEggs('Peprika'));
   console.log( ginger.children );
+  console.log( ginger.standingTime(4) );
 
 
   let summer = new KoalaBear ('Summer', new Date('1/12/1972'));
@@ -58,5 +60,6 @@
   console.log( summer.giveBirth('Spring'));
   console.log( summer.giveBirth('Winter'));
   console.log( summer.children );
+  console.log( summer.hugTrees(8) );
 
 }());

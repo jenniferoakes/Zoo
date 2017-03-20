@@ -25,6 +25,10 @@
       return baby;
     }
 
+    standingTime(time) {
+      return 'I can stand on one leg for ' + time + ' minutes';
+    }
+
   };
 
 

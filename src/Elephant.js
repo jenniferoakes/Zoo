@@ -25,8 +25,8 @@
       return baby;
     }
 
-    goBackToTheWild() {
-      
+    beCute(trunklength) {
+      return 'I am cute because of my ' + trunklength + ' foot trunk';
     }
 
   };

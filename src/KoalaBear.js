@@ -26,6 +26,10 @@
       return baby;
     }
 
+    hugTrees(numberOfTrees) {
+      return 'I am currently hugging ' + numberOfTrees + ' trees';
+    }
+
   };
 
 }());
