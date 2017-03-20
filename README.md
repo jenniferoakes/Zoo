@@ -2,39 +2,12 @@
 
 This repo is designed to practice writing classes, constructor functions, and methods. By completing this assignment, I will have gained experience creating a new type of object with child objects, and will have practiced sharing functionality through prototypes.
 
-<!-- ## Terminal Commands:
-```sh
-  npm install --save-dev fetch-mock
-
-  npm install --save-dev grunt
-
-  npm install grunt-contrib-copy --save-dev
-
-  npm install --save-dev load-grunt-tasks
-
-  npm install -g grunt-cli
-
-  npm install --save-dev grunt-contrib-clean
-
-    grunt build
-
-  npm install --save-dev grunt-contrib-sass
-
-  npm install --save-dev grunt-contrib-jshint
-
-  npm install --save-dev grunt-karma
-
-  npm install jquery
-
-  npm install --save jquery
-``` -->
-
 ## Tasks:
-- [ ] Create an Animal class with a constructor
-- [ ] Make sure all Animals have a name and date of birth
-- [ ] Create a method for the date of birth so that is will only be retrieved, not changed
-- [ ] Create a method for determining an animal's age in years
-- [ ] Create a **toString()** method which prints out the animals name and date of birth
+- [X] Create an Animal class with a constructor
+- [X] Make sure all Animals have a name and date of birth
+- [X] Create a method for the date of birth so that is will only be retrieved, not changed
+- [X] Create a method for determining an animal's age in years
+- [X] Create a **toString()** method which prints out the animals name and date of birth
 - [ ] Create two specific species of Animal which extend the Animal class
 - [ ] Specific species constructors *must* use the parent constructor
 - [ ] Each species class must have a static method which returns the scientific name of that species
