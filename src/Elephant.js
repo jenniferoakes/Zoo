@@ -8,6 +8,7 @@
   window.zoo.Elephant = class Elephant extends Animal {
     constructor(name, dateOfBirth) {
       super(name, dateOfBirth);
+      this.children = [];
     }
     print() {
       super.print();
@@ -15,8 +16,18 @@
     }
 
     static getSpecies() {
-    return 'Elephant';
-  }
+      return 'Elephant';
+    }
+
+    giveBirth(name) {
+      let baby = new window.zoo.Elephant(name, new Date());
+      this.children.push(baby);
+      return baby;
+    }
+
+    goBackToTheWild() {
+      
+    }
 
   };
 

@@ -28,6 +28,10 @@
   console.log( chuck.toString() );
   console.log( chuck.getDob() );
   console.log( Elephant.getSpecies() );
+  console.log( chuck.giveBirth('Chuckie'));
+  console.log( chuck.giveBirth('Chuckster'));
+  console.log( chuck.giveBirth('Chuckette'));
+  console.log( chuck.children );
 
 
 
@@ -37,6 +41,11 @@
   console.log( ginger.toString() );
   console.log( ginger.getDob() );
   console.log( Flamingo.getSpecies() );
+  console.log( ginger.layEggs('Cinnamon'));
+  console.log( ginger.layEggs('Pepper'));
+  console.log( ginger.layEggs('Basil'));
+  console.log( ginger.layEggs('Peprika'));
+  console.log( ginger.children );
 
 
   let summer = new KoalaBear ('Summer', new Date('1/12/1972'));
@@ -45,5 +54,9 @@
   console.log( summer.toString() );
   console.log( summer.getDob() );
   console.log( KoalaBear.getSpecies() );
+  console.log( summer.giveBirth('Autumn'));
+  console.log( summer.giveBirth('Spring'));
+  console.log( summer.giveBirth('Winter'));
+  console.log( summer.children );
 
 }());

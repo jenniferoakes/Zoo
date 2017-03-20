@@ -24,7 +24,7 @@
 
     printName() {
       console.log(this.name);
-      return 'this.name';
+      return this.name;
     }
 
     toString() {
