@@ -12,17 +12,30 @@
      * @return {void}
      */
     constructor(name, dateOfBirth) {
-      this.name = name;
-      console.log(dateOfBirth);
+
+      if ( typeof(name) !== 'string' ) {
+        let theError = new TypeError("Please input a name with '' around the value");
+        throw theError;
+        // console.log('not a string!');
+      }
+
       if ( ! (dateOfBirth instanceof Date) ) {
         dateOfBirth = new Date();
       }
+
+      this.name = name;
+      console.log(dateOfBirth);
       this.dob = dateOfBirth;
     }
 
+    /** Returns date of birth
+     * @param {Date} dateOfBirth Date the animal was born
+     * @return {Date}
+     */
     getDob() {
       return this.dob;
     }
+
     /**
      * Gets the current age of the Animal in whole years
      * @return {Number} the age of the animal

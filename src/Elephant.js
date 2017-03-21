@@ -9,12 +9,6 @@
     constructor(name, dateOfBirth) {
       super(name, dateOfBirth);
       this.children = [];
-
-      if (typeof name !== 'string') {
-        let theError = new TypeError("Please input a name with '' around the value");
-        throw theError;
-        // console.log('not a string!');
-      }
     }
     print() {
       super.print();
@@ -26,12 +20,22 @@
     }
 
     giveBirth(name) {
+
+    if (typeof(name) !== 'string') {
+      let theError = new TypeError("Please input a name with '' around the value");
+      throw theError;
+    }
       let baby = new window.zoo.Elephant(name, new Date());
       this.children.push(baby);
       return baby;
     }
 
     beCute(trunklength) {
+      trunklength = Number(trunklength);
+      if(! Number.isFinite(trunklength)) {
+        let theError = new TypeError("Please input a number");
+        throw theError;
+      }
       return 'I am cute because of my ' + trunklength + ' foot trunk';
     }
 

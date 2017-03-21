@@ -8,8 +8,6 @@
   let Flamingo = window.zoo.Flamingo;
   let KoalaBear = window.zoo.KoalaBear;
   // let Employee = window.zoo.Employee;
-
-
   // let Russell = new Employee('Russell', new Date('1/1/2000'), 'sandy brown');
   // console.log( Russell.getAge() );
 
@@ -19,6 +17,16 @@
   console.log(theAge);
   console.log( dave.toString() );
   console.log( dave.getDob() );
+
+  try {
+    let jordan = new Animal(45, new Date('1/1/1950'));
+  } catch(err) {
+    if (err instanceof TypeError) {
+      console.warn( err.message );
+    } else {
+      throw err;
+    }
+  }
 
   let jordan = new Animal('Jordan', new Date('1/1/1950'));
   jordan.printName();
@@ -30,12 +38,43 @@
     let chuck = new Elephant (45, new Date('1/8/1983'));
   } catch(err) {
     if (err instanceof TypeError) {
-      // console.warn(err); //this won't happen
+      console.warn( err.message );
     } else {
       throw err;
     }
-  } finally {
-    // console.log('I will ALWAYS execute!');
+  }
+
+  try {
+    let bigfoot = new Elephant ("Bigfoot", new Date('1/10/2000'));
+    bigfoot.giveBirth(true);
+  } catch(err) {
+    if (err instanceof TypeError) {
+      console.warn( err.message );
+    } else {
+      throw err;
+    }
+  }
+
+  try {
+    let tinytrunk = new Elephant ("tinytrunk", new Date('3/4/2011'));
+    tinytrunk.beCute('5');
+  } catch(err) {
+    if (err instanceof TypeError) {
+      console.warn( err.message );
+    } else {
+      throw err;
+    }
+  }
+
+  try {
+    let tiniestTrunk = new Elephant ("tiniest trunk", new Date('3/8/2011'));
+    tiniestTrunk.beCute('this is a string not a number');
+  } catch(err) {
+    if (err instanceof TypeError) {
+      console.warn( err.message );
+    } else {
+      throw err;
+    }
   }
 
   let chuck = new Elephant ("Chuck", new Date('1/8/1983'));
