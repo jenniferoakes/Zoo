@@ -9,10 +9,11 @@
      * Constructs a new animal
      * @param {String} name       Name of the Animal
      * @param {Date} dateOfBirth  Date the Animal was born
-     * @return {void} 
+     * @return {void}
      */
     constructor(name, dateOfBirth) {
       this.name = name;
+      console.log(dateOfBirth);
       if ( ! (dateOfBirth instanceof Date) ) {
         dateOfBirth = new Date();
       }
@@ -30,7 +31,6 @@
       let currentDate = new Date();
       this.age = currentDate.getFullYear() - this.dob.getFullYear();
       return this.age;
-
       //might not need variable here since I use it only one time
     }
 

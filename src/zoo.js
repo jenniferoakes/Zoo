@@ -7,6 +7,11 @@
   let Elephant = window.zoo.Elephant;
   let Flamingo = window.zoo.Flamingo;
   let KoalaBear = window.zoo.KoalaBear;
+  // let Employee = window.zoo.Employee;
+
+
+  // let Russell = new Employee('Russell', new Date('1/1/2000'), 'sandy brown');
+  // console.log( Russell.getAge() );
 
   let dave = new Animal('Dave', new Date('1/1/2000'));
   dave.printName();
@@ -21,8 +26,19 @@
   console.log( jordan.toString() );
   console.log( jordan.getDob() );
 
+  try {
+    let chuck = new Elephant (45, new Date('1/8/1983'));
+  } catch(err) {
+    if (err instanceof TypeError) {
+      // console.warn(err); //this won't happen
+    } else {
+      throw err;
+    }
+  } finally {
+    // console.log('I will ALWAYS execute!');
+  }
 
-  let chuck = new Elephant ('Chuck', new Date('1/8/1983'));
+  let chuck = new Elephant ("Chuck", new Date('1/8/1983'));
   chuck.printName();
   console.log( chuck.getAge() );
   console.log( chuck.toString() );

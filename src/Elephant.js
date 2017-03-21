@@ -9,6 +9,12 @@
     constructor(name, dateOfBirth) {
       super(name, dateOfBirth);
       this.children = [];
+
+      if (typeof name !== 'string') {
+        let theError = new TypeError("Please input a name with '' around the value");
+        throw theError;
+        // console.log('not a string!');
+      }
     }
     print() {
       super.print();
@@ -34,6 +40,5 @@
     }
 
   };
-
 
 }());
