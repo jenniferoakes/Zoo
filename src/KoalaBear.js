@@ -30,6 +30,10 @@
       return 'I am currently hugging ' + numberOfTrees + ' trees';
     }
 
+    toString() {
+      return this.name + ' ' + this.dob;
+    }
+
   };
 
 }());

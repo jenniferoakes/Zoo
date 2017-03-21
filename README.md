@@ -13,8 +13,8 @@ This repo is designed to practice writing classes, constructor functions, and me
 - [X] Each species class must have a static method which returns the scientific name of that species
 - [X] If you create a mammal, it must be able to give birth (what should that method return?)
 - [X] If you create a reptile or bird it must be able to lay one or more eggs (what should that method return?)
-- [ ] For each species create at least one other method (in addition to the things directly above) (ex. Parrots can speak, lions can roar, otters can swim...)
-- [ ] Your species-specific method(s) MUST take in (and use) at least one argument. (For example, a swim method might take the argument: duration and return how far the animal swam in that time (speed * duration))
+- [X] For each species create at least additional other method
+- [X] Your species-specific method(s) MUST take in (and use) at least one argument. (For example, a swim method might take the argument: duration and return how far the animal swam in that time (speed * duration))
 - [ ] All species must re-implement the toString() method to print out what species it is
 Adventure Mode
 - [ ] Write tests for your Zoo! This is how we know our code is working, and how we can create our various Animals without having a web application yet.

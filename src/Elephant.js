@@ -29,6 +29,10 @@
       return 'I am cute because of my ' + trunklength + ' foot trunk';
     }
 
+    toString() {
+      return this.name + ' ' + this.dob;
+    }
+
   };
 
 

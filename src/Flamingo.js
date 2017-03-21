@@ -29,6 +29,10 @@
       return 'I can stand on one leg for ' + time + ' minutes';
     }
 
+    toString() {
+      return this.name + ' ' + this.dob;
+    }
+
   };
 
 
