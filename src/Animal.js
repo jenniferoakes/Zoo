@@ -6,11 +6,11 @@
   window.zoo.Animal = class Animal {
 
     /**
-     * Constructs a new animal
-     * @param {String} name       Name of the Animal
-     * @param {Date} dateOfBirth  Date the Animal was born
-     * @return {void}
-     */
+    * Constructs a new animal
+    * @param {String} name       Name of the Animal
+    * @param {Date} dateOfBirth  Date the Animal was born
+    * @return {void}
+    */
     constructor(name, dateOfBirth) {
 
       if ( typeof(name) !== 'string' ) {
@@ -29,18 +29,18 @@
     }
 
     /**
-     * Returns date of birth
-     * @param {Date} dateOfBirth Date the animal was born
-     * @return {Date}
-     */
+    * Returns date of birth
+    * @param {Date} dateOfBirth Date the animal was born
+    * @return {Date}
+    */
     getDob() {
       return this.dob;
     }
 
     /**
-     * Gets the current age of the Animal in whole years
-     * @return {Number} the age of the animal
-     */
+    * Gets the current age of the Animal in whole years
+    * @return {Number} the age of the animal
+    */
     getAge() {
       let currentDate = new Date();
       this.age = currentDate.getFullYear() - this.dob.getFullYear();
@@ -49,20 +49,20 @@
     }
 
     /**
-     * Prints name of animal
-     * @param {String} name   Name of animal
-     * @return {String}
-     */
+    * Prints name of animal
+    * @param {String} name   Name of animal
+    * @return {String}
+    */
     printName() {
       console.log(this.name);
       return this.name;
     }
 
     /**
-     * Returns name and date of birth
-     * @param {String} string   String to include name and date of birth
-     * @return {String}
-     */
+    * Returns name and date of birth
+    * @param {String} string   String to include name and date of birth
+    * @return {String}
+    */
     toString() {
       return this.name + ' ' + this.dob;
     }
