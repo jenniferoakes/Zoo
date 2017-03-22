@@ -9,11 +9,12 @@
     * Constructs a new animal
     * @param {String} name       Name of the Animal
     * @param {Date} dateOfBirth  Date the Animal was born
+    * @throws {TypeError}        When the name is not a string OR the date of birth is not a date
     * @return {void}
     */
     constructor(name, dateOfBirth) {
 
-      if ( typeof(name) !== 'string' ) {
+      if ( typeof(name) !== 'string' || name.length < 1 ) {
         let theError = new TypeError("Please input a name with '' around the value");
         throw theError;
         // console.log('not a string!');
@@ -38,8 +39,8 @@
     }
 
     /**
-    * Gets the current age of the Animal in whole years
-    * @return {Number} the age of the animal
+    * Calculates the current age of the Animal in whole years
+    * @return {Number} the current age of the animal
     */
     getAge() {
       let currentDate = new Date();
