@@ -28,7 +28,8 @@
       this.dob = dateOfBirth;
     }
 
-    /** Returns date of birth
+    /**
+     * Returns date of birth
      * @param {Date} dateOfBirth Date the animal was born
      * @return {Date}
      */
@@ -47,11 +48,21 @@
       //might not need variable here since I use it only one time
     }
 
+    /**
+     * Prints name of animal
+     * @param {String} name   Name of animal
+     * @return {String}
+     */
     printName() {
       console.log(this.name);
       return this.name;
     }
 
+    /**
+     * Returns name and date of birth
+     * @param {String} string   String to include name and date of birth
+     * @return {String}
+     */
     toString() {
       return this.name + ' ' + this.dob;
     }
